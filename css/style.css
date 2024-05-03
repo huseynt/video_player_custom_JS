@@ -1,0 +1,103 @@
+#videoPlayer {
+  max-width: 700px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  border-radius: 25px;
+  background-color: rgba(56, 52, 51, 0.4784313725);
+  backdrop-filter: blur(20px);
+  position: relative;
+  color: #fff;
+}
+#videoPlayer #video {
+  max-width: 640px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#videoPlayer #videoControls {
+  width: 640px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 24px;
+  left: 30px;
+  transition: 0.8s linear;
+  height: 35px;
+  border-radius: 0 0 10px 10px;
+  background: linear-gradient(rgba(165, 165, 165, 0.062745098), rgba(0, 0, 0, 0.7019607843), #000000);
+}
+#videoPlayer #videoControls .btn {
+  margin: 30px 0px;
+  padding: 10px 7px;
+  border: none;
+  font-weight: 700;
+  background-color: transparent;
+  color: #fff;
+}
+#videoPlayer #videoControls .btn:active {
+  background-color: #404040;
+  box-shadow: 0 0 20px 2px #000000;
+}
+#videoPlayer #videoControls #volumePercent {
+  margin: 0 15px 0 0;
+  font-size: 13px;
+  color: #000000;
+  font-weight: 700;
+  color: #fff;
+}
+#videoPlayer #videoControls #rangeVid {
+  color: #000;
+  -webkit-appearance: none;
+  width: 180px;
+  height: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+#videoPlayer #videoControls #rangeVid::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 12px;
+  background: #04aaa7;
+  cursor: pointer;
+}
+#videoPlayer #videoControls #rangeVid:hover {
+  opacity: 1;
+}
+#videoPlayer #videoControls #timeLine {
+  margin: 0 5px;
+}
+#videoPlayer #videoControls #rangeVol {
+  width: 80px;
+  margin: 0 10px;
+  color: #000;
+  -webkit-appearance: none;
+  height: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+#videoPlayer #videoControls #rangeVol::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background: #04aaa7;
+  cursor: pointer;
+}
+#videoPlayer #videoControls #rangeVol:hover {
+  opacity: 1;
+}
+
+.border {
+  border-radius: 25px;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
